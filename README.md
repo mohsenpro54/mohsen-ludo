@@ -1,3 +1,3 @@
 # ludo project
 
-a good ludo from pro, enjoy all friends
+a good ludo from mohsen pro, enjoy all friends
