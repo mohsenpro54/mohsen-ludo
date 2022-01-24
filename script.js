@@ -58,6 +58,7 @@ btnRoll.addEventListener('click', function () {
     const dice = Math.trunc(Math.random() * 6) + 1;
 
     // 2. Display dice
+    document.querySelector('.dice').setAttribute('src', imgs);
     diceEl.classList.remove('hidden');
 
     diceEl.src = `/imgs/dice-${dice}.png`;
