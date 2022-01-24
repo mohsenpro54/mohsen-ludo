@@ -44,6 +44,14 @@ const switchPlayer = function () {
 };
 
 // Rolling dice functionality
+let images = [
+  'imgs/dice-1.png',
+  'imgs/dice-2.png',
+  'imgs/dice-3.png',
+  'imgs/dice-4.png',
+  'imgs/dice-5.png',
+  'imgs/dice-6.png',
+];
 btnRoll.addEventListener('click', function () {
   if (playing) {
     // 1. Generating a random dice roll
@@ -51,7 +59,8 @@ btnRoll.addEventListener('click', function () {
 
     // 2. Display dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `/imgs/dice-${dice}.png`;
+
+    diceEl.src = `imgs/dice-${dice}.png`;
 
     // 3. Check for rolled 1
     if (dice !== 1) {
