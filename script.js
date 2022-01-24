@@ -44,7 +44,7 @@ const switchPlayer = function () {
 };
 
 // Rolling dice functionality
-let images = [
+let imgs = [
   'imgs/dice-1.png',
   'imgs/dice-2.png',
   'imgs/dice-3.png',
@@ -60,7 +60,7 @@ btnRoll.addEventListener('click', function () {
     // 2. Display dice
     diceEl.classList.remove('hidden');
 
-    diceEl.src = `imgs/dice-${dice}.png`;
+    diceEl.src = `/imgs/dice-${dice}.png`;
 
     // 3. Check for rolled 1
     if (dice !== 1) {
