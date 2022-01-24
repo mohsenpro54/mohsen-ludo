@@ -9,7 +9,7 @@
   "author": "Mohsen Pro",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.1"
+    "parcel": "^2.2.1"
   },
   "dependencies": {
     "core-js": "^3.20.1"
