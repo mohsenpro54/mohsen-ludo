@@ -12,6 +12,7 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+// const imgo = require('./imgs');
 
 let scores, currentScore, activePlayer, playing;
 
@@ -45,12 +46,12 @@ const switchPlayer = function () {
 
 // Rolling dice functionality
 let imgs = [
-  'imgs/dice-1.png',
-  'imgs/dice-2.png',
-  'imgs/dice-3.png',
-  'imgs/dice-4.png',
-  'imgs/dice-5.png',
-  'imgs/dice-6.png',
+  './imgs/dice-1.png',
+  './imgs/dice-2.png',
+  './imgs/dice-3.png',
+  './imgs/dice-4.png',
+  './imgs/dice-5.png',
+  './imgs/dice-6.png',
 ];
 btnRoll.addEventListener('click', function () {
   if (playing) {
@@ -60,7 +61,7 @@ btnRoll.addEventListener('click', function () {
     // 2. Display dice
     diceEl.classList.remove('hidden');
 
-    diceEl.src = `/imgs/imgs/dice-${dice}.png`;
+    diceEl.src = `./imgs/dice-${dice}.png`;
 
     // 3. Check for rolled 1
     if (dice !== 1) {
